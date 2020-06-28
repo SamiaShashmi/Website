@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="icon" href="images/charity3.png" type="image/icon type">
+    <title>Manobotar Deyal-Sign Up</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header>
+        <h1><img src="images/icon.png" style="width: 270px;height: 60px;"></h1>
+        <nav>
+            <a href="Homepage.html" class="nava">Home</a>
+            <a href="Doners.html" class="nava">Doners</a>
+            <a href="#" class="nava">Donees</a>
+            <a href="#" class="nava">Products</a>
+        </nav>
+        <a href="#" class="signin">Sign in</a>
+        <a href="#" class="signup signthis">Signing up</a>
+    </header>
+    <section>
+        <form align="center" id="formsignup" autocomplete="off" action="javascript.js">
+        <div>
+            Sign up as:<br>
+            <input type="radio" id="Doner" name="account" value="Doner">
+            <label for="Doner">Doner</label>
+            <input type="radio" id="Donee" name="account" value="Donee">
+            <label for="Donee">Donee</label><br>
+        </div>
+        <div>
+            <label for="fname">Name:</label><br>
+            <input class="input" type="text" id="fname" name="fname"><br>
+        </div>
+        <div>    
+            <label for="age">Age:</label><br>
+            <input class="input" type="number" id="age" name="age"><br>
+        </div>
+        <div>
+            Gender :<br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input class="input" type="email" id="email" name="email"><br>
+        </div>
+        <div>
+            <label for="pass">Password:</label><br>
+            <input class="input" type="password" id="pass" name="pass"><br>
+        </div>
+        <div>
+            <label for="passvery"> Verify password:</label><br>
+            <input class="input" type="password" id="passvery" name="passvery"><br>
+        </div>
+        <div>    
+            <input onclick="submit1();" type="button" class="submit" value="Create Account"/>
+        </div>
+          </form>
+        </section>
+        <p id="demo"></p>
+</body>
+</html>
